@@ -1,8 +1,8 @@
+import { Helmet } from 'react-helmet';
 import Gw2Table from '@/components/Gw2Table/Gw2Table';
 import DarkModeToggle from '@/components/DarkModeToggle/DarkModeToggle';
 import { useFetch } from '@/hooks/useFetch';
 import { Gw2Server } from '@/types/types';
-import { Helmet } from 'react-helmet';
 
 const App = (): JSX.Element => {
     const { data: servers, isLoading, error } = useFetch<Gw2Server[]>(`https://api.guildwars2.com/v2/worlds?ids=all&lang=en`);
