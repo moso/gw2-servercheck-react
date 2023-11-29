@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
+        <link rel="preload" as="style" href="https://fonts.bunny.net/css?family=inter:300,400,500,600|roboto-mono:300,500&display=swap" />
+        <link rel="stylesheet" href="https://fonts.bunny.net/css?family=inter:300,400,500,600|roboto-mono:300,500&display=swap" />
+        <script>
+            (function() {
+                const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                const setting = localStorage.getItem('color-scheme') || 'auto';
+                if (setting === 'dark' || (prefersDark && setting !== 'light')) document.documentElement.classList.toggle('dark', true);
+            })();
+        </script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.tsx"></script>
+    </body>
+</html>
