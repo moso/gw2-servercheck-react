@@ -1,0 +1,7 @@
+{
+    "arrowParens": "always",
+    "proseWrap": "never",
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "tabWidth": 4
+}

@@ -44,17 +44,6 @@ p {
 footer {
     margin-top: 2rem;
     text-align: center;
-
-    svg {
-        width: 16px;
-        height: 16px;
-
-        &:hover,
-        &:focus,
-        &:hover:active {
-            cursor: pointer;
-        }
-    }
 }
 
 

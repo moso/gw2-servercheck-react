@@ -41,24 +41,26 @@ const Gw2Table = (props: { servers: any[] }): JSX.Element => {
         <>
             <table className="table">
                 <thead>
-                    <th
-                        className={classNames({
-                            'sort-asc': sortConfig.key === 'name' && sortConfig.direction === -1,
-                            'sort-desc': sortConfig.key === 'name' && sortConfig.direction === 1,
-                        })}
-                        onClick={() => sortMe('name')}
-                    >
-                        Server name
-                    </th>
-                    <th
-                        className={classNames({
-                            'sort-asc': sortConfig.key === 'population' && sortConfig.direction === -1,
-                            'sort-desc': sortConfig.key === 'population' && sortConfig.direction === 1,
-                        })}
-                        onClick={() => sortMe('population')}
-                    >
-                        Population
-                    </th>
+                    <tr>
+                        <th
+                            className={classNames({
+                                'sort-asc': sortConfig.key === 'name' && sortConfig.direction === -1,
+                                'sort-desc': sortConfig.key === 'name' && sortConfig.direction === 1,
+                            })}
+                            onClick={() => sortMe('name')}
+                        >
+                            Server name
+                        </th>
+                        <th
+                            className={classNames({
+                                'sort-asc': sortConfig.key === 'population' && sortConfig.direction === -1,
+                                'sort-desc': sortConfig.key === 'population' && sortConfig.direction === 1,
+                            })}
+                            onClick={() => sortMe('population')}
+                        >
+                            Population
+                        </th>
+                    </tr>
                 </thead>
                 <tbody>
                     {sortedServers && sortedServers.map((server: Gw2Server, index: number) => (

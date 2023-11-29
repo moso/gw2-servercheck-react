@@ -8,5 +8,13 @@ export default defineConfig({
             { find: /@\//, replacement: `${join(process.cwd(), './src')}/` },
         ],
     },
+
+    optimizeDeps: {
+        include: [
+            'react',
+            'react-helmet',
+        ],
+    },
+
     plugins: [react()],
 });

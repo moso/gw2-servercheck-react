@@ -1,0 +1,14 @@
+@import '@/styles/mixins';
+
+.darkModeToggle {
+    margin-left: .5rem;
+
+    svg {
+        width: 14px;
+        height: 14px;
+
+        @include hover-state() {
+            cursor: pointer;
+        }
+    }
+}

@@ -1,5 +1,15 @@
+@import '@/styles/variables';
+
 .darkmode {
     background-color: $color-dark;
+
+    a {
+        color: darken($color-gray, 25%);
+
+        @include hover-state() {
+            color: darken($color-gray, 45%);
+        }
+    }
 
     .section-title {
         color: $color-gray;
@@ -13,7 +23,7 @@
             border-bottom: 2px solid darken($color-gray, 75%);
 
             &:last-of-type {
-                border-left-color: transparent;
+                border-left-color: lighten($color-dark, 10%);
             }
         }
 
