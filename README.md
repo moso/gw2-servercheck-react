@@ -1,30 +1,36 @@
-# React + TypeScript + Vite
+# Guild Wars 2 Servercheck
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Checks Guild Wars 2 API for server population
 
-Currently, two official plugins are available:
+## Tech stack
+- [React](https://react.dev)
+- [Vite](https://vitejs.dev)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Build Setup
 
-## Expanding the ESLint configuration
+This assumes you already have [Node.js](https://nodejs.org) and [pnpm](https://pnpm.io) installed.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+You can also just use regular npm.
 
-- Configure the top-level `parserOptions` property like this:
+```bash
+# Install dependencies
+$ pnpm i
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+# Serve with hot reload at localhost:3000
+$ pnpm dev
+
+# Build for production
+$ pnpm build
+
+# Preview production build
+$ pnpm preview
+
+# Lint code
+$ pnpm lint
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+For documentation on React, check [react.dev](https://react.dev).
+
+For documentation on Vite, check [vitejs.dev](https://vitejs.dev).
+
+For documentation on the Guild Wars 2 API, check [Guild Wars 2 Wiki](https://wiki.guildwars2.com/wiki/API:Main).
